@@ -1,38 +1,42 @@
 body{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 15% 20% 30% 20% 15%;
+    grid-template-rows: 50px 65px 100px 100px 420px;
     background-color: #648DE5;
 }
 h1{
     color: #fffcf2;
+    text-align: center;
+    font-size: 25px;
+    grid-row: 1/2;
+    grid-column: 3/4;
     align-self: center;
-    font-size: 30px;
 }
 #input{
+    grid-row: 2/3;
+    grid-column: 3/4;
     align-self: center;
+    justify-self: center;
 }
 input{
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     font-size: 30px;
     padding: 3px 10px;
 }
 button{
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     font-size: 30px;
     padding: 3px 10px;
     color: #fffcf2;
     background-color: #4B4237;
 }
 #output{
+    grid-row: 3/5;
+    grid-column: 2/5;
     background-color: #fffcf2;
     border-radius: 20px;
-    margin-top: 40px;
-    width: 70%;
-    align-self: center;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -40,9 +44,23 @@ button{
     font-size: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
+    min-height: 120px;
+    align-self: center;
+    z-index: 2;
+}
+#mapid{
+    z-index: 1;
+    grid-row: 4/6;
+    grid-column: 1/6;
+    background-color: #78AB46;
 }
 .line{
     width: 2px;
     min-height: 100px;
     background-color: #D9D7D3;
+}
+.details{
+    font-size: 25px;
+    font-weight: 900;
+    color: #4B4237;
 }
