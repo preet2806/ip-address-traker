@@ -64,3 +64,53 @@ button{
     font-weight: 900;
     color: #4B4237;
 }
+.attribution{
+    position: absolute;
+    bottom: 0%;
+}
+@media (max-width: 6in){
+    body{
+        grid-template-columns: 10% 15% 50% 15% 10%;
+        grid-template-rows: 45px 60px 115px 115px 395px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    #input{
+        grid-column: 2/6;
+    }
+    input{
+        font-size: 20px;
+        transform: translateX(-15px);
+    }
+    button{
+        font-size: 20px;
+        transform: translateX(-15px);
+    }
+    #output{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-size: 10px;
+        padding-top: 0px;
+        min-height: 180px;
+    }
+    .line{
+        display: none;
+    }
+    .details{
+        justify-self: center;
+        align-self: center;
+        font-size: 15px;
+        font-weight: 700;
+        color: #4B4237;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .out{
+        margin-top: 5px;
+        align-self: center;
+        text-align: center;
+    }
+}
